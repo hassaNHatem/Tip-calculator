@@ -1,0 +1,208 @@
+*{
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+#root,html,body{
+  background-color: hsl(185, 41%, 84%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-componenet{
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: white;
+  height: 60vh;
+  align-items: center;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+.input-form{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  height: 90%;
+  margin-left: 5%;
+}
+.input-form p {
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 1% !important;
+  font-size: 10px;
+}
+.Bill{
+  position: relative;
+  margin-bottom: 5%;
+}
+.Bill span{
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  
+  color: hsl(186, 14%, 43%);
+}
+.Bill input{
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid  hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  direction: rtl;
+}
+.tips{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30.33%, 1fr));
+  grid-row-gap: 1rem;
+  grid-column-gap: 5px;
+  margin-bottom: 5%;
+}
+.tip{
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+}
+.tip-custome{
+  text-align: center;
+  font-size: 15px;
+  color: hsl(184, 14%, 56%);
+  font-weight: 700;
+}
+.tip:hover{
+  background-color: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%) ;
+}
+.tip-custome input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  color:  hsl(183, 100%, 15%);
+  direction: rtl;
+  font-size: 24px;
+}
+.tip-custome input::placeholder{
+  text-align: center;
+  font-size: 15px;
+}
+.result-field{
+  background-color: hsl(183, 100%, 15%);
+  margin-right: 5%;
+  border-radius: 5%;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  margin-left: 5%;
+  
+}
+.tip-amount{
+  height: 20vh;
+  margin-left: 6%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.tip-amount .title{
+  margin-bottom: 5%;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: left;
+}
+.tip-amount .title p{
+  margin-bottom: 0px;
+  color: #fff;
+}
+.tip-amount .title .p2{
+ 
+  margin-top: 0px;
+  color: hsl(184, 14%, 56%);
+  font-size: 10px;
+}
+.tip-amount .value{
+  color: hsl(172, 67%, 45%);
+  font-size: 35px;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+.total .title p{
+  color: #fff;
+  margin-bottom: 0px;
+}
+.total{
+  height: 10vh;
+  margin-left: 6%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.total .title{
+  margin-bottom: 5%;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: left;
+}
+.total .title .p2{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: hsl(184, 14%, 56%);
+  
+  font-size: 10px;
+}
+.total .value{
+  color: hsl(172, 67%, 45%);
+  font-size: 35px;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+button{
+  width: 70%;
+  display: block;
+    margin: 0 auto;
+    margin-top: 26%;
+    padding: 5px;
+    border: 1px solid ;
+    border-radius: 5px;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+@media (max-width:700px){
+  #root,html,body{
+    flex-direction: column;
+ 
+  }
+  .main-componenet{
+    flex-direction: column;
+    height: 100%;
+  }
+  .input-form{
+    margin-right: 5%;
+  }
+  .result-field .value{
+    font-size: 25px;
+  }
+  
+  .result-field{
+    width: 90%;
+    height: 90%;
+  }
+}
